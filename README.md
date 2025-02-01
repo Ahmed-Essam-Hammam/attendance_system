@@ -1,9 +1,10 @@
 # Attendance System
-This project is a Face Recognition-based Attendance System that uses the OpenCV, face_recognition, and Pandas libraries to recognize faces from a webcam and mark attendance in an Excel sheet.
+
+This project is a Face Recognition-based Attendance System that uses OpenCV, face_recognition, and Pandas to recognize faces from a webcam and mark attendance in an Excel sheet (Attendance.xlsx).
 
 Features
 ✅ Detects and recognizes faces in real time using a webcam
-✅ Compares detected faces with known faces from an "images" folder
+✅ Compares detected faces with known faces from an images/ folder
 ✅ Marks attendance in an Excel sheet (Attendance.xlsx) with a timestamp
 ✅ Uses face_recognition for accurate facial identification
 ✅ Draws bounding boxes around recognized faces
@@ -32,10 +33,11 @@ python attendance.py
 The webcam will open, detect faces, and mark attendance in Attendance.xlsx
 Press Esc to exit the program
 How It Works
-Load known images: Reads images from the images/ folder and encodes them using face_recognition.
-Capture webcam frames: Reads video input and resizes frames for faster processing.
-Detect faces: Identifies faces and compares them with known encodings.
-Mark attendance: If a match is found, the person's name and timestamp are saved in Attendance.xlsx.
+1️⃣ Load known images: Reads images from the images/ folder and encodes them using face_recognition
+2️⃣ Capture webcam frames: Reads video input and resizes frames for faster processing
+3️⃣ Detect faces: Identifies faces and compares them with known encodings
+4️⃣ Mark attendance: If a match is found, the person's name and timestamp are saved in Attendance.xlsx
+
 File Structure
 bash
 Copy
@@ -52,9 +54,9 @@ NumPy
 Pandas
 OpenPyXL
 Notes
-The first time a face is recognized, it is added to the attendance sheet.
-The Excel file (Attendance.xlsx) is automatically created if it doesn’t exist.
-To improve accuracy, use high-quality, front-facing images in the images/ folder.
+The first time a face is recognized, it is added to the attendance sheet
+The Excel file (Attendance.xlsx) is automatically created if it doesn’t exist
+To improve accuracy, use high-quality, front-facing images in the images/ folder
 Future Improvements
 🔹 Add a GUI for better usability
 🔹 Store attendance data in a database instead of an Excel file
